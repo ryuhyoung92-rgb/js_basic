@@ -187,6 +187,7 @@ console.log(menuAll[1]);
 
 cafeKiosk(0, 0, 2)
 cafeKiosk(1, 1)
+
 cafeKiosk(0, 2, 2)
 cafeKiosk(1, 1)
 
