@@ -1,0 +1,81 @@
+/* swiper-1.css */
+/* a {position:absolute; right:100px; bottom:100px;} */
+#top {
+    position:fixed; right:60px; bottom:60px; z-index:999;
+    width:60px; height:60px; border-radius:50%;
+    font-size:0.8rem; text-align:center; line-height:60px; background:#222; color:#fff;
+    box-shadow:0 0 10px rgba(255,255,255,0.5);
+}
+header {
+    height:60px; background:rgba(255,255,255,0.6);
+    position:fixed; width:100%; left:0; top:0; z-index:100;
+}
+header nav {float:right; padding-right:60px;}
+header nav a {display:inline-block; line-height:60px; margin-left:20px;}
+#wrap {
+    min-width:1800px;
+    height:100vh;
+}
+#wrap .swiper-wrapper {}
+#wrap .swiper-wrapper .swiper-slide {padding:100px 0;}
+#wrap .swiper-wrapper .swiper-slide h1 {
+    font-size:1.5rem; font-weight:700;
+    text-align:center;
+}
+#wrap .swiper-wrapper .intro {
+    background:linear-gradient(#eee, #aaa);
+}
+#wrap .swiper-wrapper .profile {
+    background:purple;
+}
+#wrap .swiper-wrapper .project1 {
+    background:linear-gradient(#aaa, #eee);
+}
+
+#wrap .swiper-wrapper .project1 .group {
+    position:relative; width:max-content; margin:0 auto;
+}
+#wrap .swiper-wrapper .project1 .group .web {
+    width:600px; height:400px;
+    margin:50px auto 0;
+    /* overflow:visible; */ /* hidden 내장 */
+}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper {}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .swiper-slide:nth-child(odd) {background:pink;}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .swiper-slide:nth-child(even) {background:purple;}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide1 {}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide2 {}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide3 {}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide4 {}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide5 {}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide6 {}
+#wrap .swiper-wrapper .project1 .group .web + .web_page {
+    /* background-color:yellow; */
+    /* transform:scale(1.5); */
+    /* absolute(기본 내장) */
+    left:-40px; bottom:20px; text-align:left;
+}
+#wrap .swiper-wrapper .project1 .group .web + .web_page .swiper-pagination-current {color:aqua;}
+#wrap .swiper-wrapper .project1 .group .web + .web_page span {color:red;}
+#wrap .swiper-wrapper .project1 .group .web + .web_page .swiper-pagination-total {color:red;}
+#wrap .swiper-wrapper .project2 {
+    background:purple;
+}
+#wrap .swiper-wrapper .project2 .group {
+    position:relative; width:max-content; margin:0 auto;}
+#wrap .swiper-wrapper .project2 .group .page {
+    top:-25px; bottom:auto;
+}
+#wrap .swiper-wrapper .project2 .group .page .swiper-pagination-bullet {background:mintcream;}
+#wrap .swiper-wrapper .project2 .group .page .swiper-pagination-bullet-active {color:rgb(0, 128, 107);}
+#wrap .swiper-wrapper .project2 .group .graphic {
+    width:600px; height:400px; 
+    margin:50px auto 0;
+}
+#wrap .swiper-wrapper .project2 .group .graphic .swiper-wrapper {}
+#wrap .swiper-wrapper .project2 .group .graphic .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .project2 .group .graphic .swiper-wrapper .swiper-slide:nth-child(odd) {background:mintcream;}
+#wrap .swiper-wrapper .project2 .group .graphic .swiper-wrapper .swiper-slide:nth-child(even) {background:rgb(0, 128, 107);}
+
+
