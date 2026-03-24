@@ -20,7 +20,7 @@ const brandSwiper = new Swiper(nike,{
     spaceBetween:10,
     loop:true,
     navigation:{
-        prevEl:'.right_wrap .prev',
-        nextEl:'.right_wrap .next',
+        prevEl:'.brand_slide ~ .prev', // ~ 그 주변에 있다
+        nextEl:'.brand_slide ~ .next',
     },
 })
