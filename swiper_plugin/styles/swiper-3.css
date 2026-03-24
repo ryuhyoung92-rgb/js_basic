@@ -1,0 +1,101 @@
+/* swiper-3.css */
+#wrap {min-width:1200px; /* 콘텐츠 너비 기준 */}
+#wrap header {
+    position:sticky; top:-50px; z-index:999; left:0; /* 스크롤을 내리면 헤더 상단의 top -50px만큼 안보이고 고정되는 기능 */
+    box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
+#wrap header,
+#wrap footer {
+    width:100%; line-height:100px; text-align:center; font-size:0.95rem;
+    background:linear-gradient(90deg, #eee, #fff, #eee); color:#555;
+}
+#wrap main {}
+#wrap main #hero_wrap {}
+#wrap main #hero_wrap .ssf_hero {height:90vh;}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper {}
+#wrap main #hero_wrap .ssf_hero .prev, 
+#wrap main #hero_wrap .ssf_hero .next {
+    background-image:url(../images/arrow.png);
+    background-size:contain;
+}
+#wrap main #hero_wrap .ssf_hero .prev {transform:scaleX(-1); /* 좌우반전 */}
+#wrap main #hero_wrap .ssf_hero .prev svg, 
+#wrap main #hero_wrap .ssf_hero .next svg {display:none;}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide {
+    background-position:center; background-size:cover;
+}
+/* #wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide::before {
+    content:''; display:block; width:100%; height:100%; background:rgba(0,0,0,0.5);
+    position:absolute; left:0; top:0;
+} */
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide a {
+    display:flex; height:100%; background:rgba(0,0,0,0.5);
+    flex-flow:column nowrap; justify-content:center; align-items:center; text-align:center;
+    /* position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); */
+}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide a * {
+    color:#fff; line-height:1.5;
+}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide a p {}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide a h1 {
+    font-size:2rem; font-weight:700; margin:10px 0;
+}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide a h1+p {font-weight:300;}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide1 {background-image:url(https://image.fi.co.kr/imgdata/944/%EB%B9%88%ED%8F%B4%EB%A9%981.jpg);}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide2 {background-image:url(https://www.news1.kr/_next/image?url=https%3A%2F%2Fi3n.news1.kr%2Fsystem%2Fphotos%2F2025%2F8%2F18%2F7448182%2Fhigh.jpg&w=1920&q=75)}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide3 {background-image:url(https://image.fi.co.kr/imgdata/953/%EB%B9%88%ED%8F%B41.jpg)}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide4 {background-image:url(https://wimg.heraldcorp.com/news/cms/2025/05/21/news-p.v1.20250519.3c7227a607114457ae9364279a4c8321_P1.jpg)}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide5 {background-image:url(https://www.fashionbiz.co.kr/images/articleImg/textImg/1758238978804-%EB%B9%88%ED%8F%B4%204.jpg)}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide6 {background-image:url(https://tnnews.co.kr/wp-content/uploads/2020/12/%EC%82%AC%EC%A7%84-2.%EB%B9%88%ED%8F%B4%EC%95%A1%EC%84%B8%EC%84%9C%EB%A6%AC-21SS-%ED%95%98%EB%A3%A8-%EC%8B%9C%EB%A6%AC%EC%A6%880.jpg)}
+
+/* 나이키 기획전 */
+#wrap main #brand_wrap {padding:50px 0;}
+#wrap main #brand_wrap > h1 {font-size:1.2rem; font-weight:700; margin:0 0 30px; text-align:center;}
+#wrap main #brand_wrap .container > * {width:50%;}
+#wrap main #brand_wrap .container {
+    width:1200px; margin:0 auto; display:flex; gap:20px;
+}
+#wrap main #brand_wrap .container .left_bnr {
+    background-image:url(https://img.gqkorea.co.kr/gq/2024/11/style_673ede10bdb8f-1400x926.jpeg);
+    background-position:center; background-size:cover; height:300px;
+}
+#wrap main #brand_wrap .container .left_bnr a {
+    width:100%; height:100%; background:rgba(0,0,0,0.2);
+    display:flex; flex-flow:column nowrap; justify-content:center;
+}
+#wrap main #brand_wrap .container .left_bnr a * {text-align:center; color:#fff; line-height:1.5;}
+#wrap main #brand_wrap .container .left_bnr a h1+p {font-size:0.8rem;;}
+#wrap main #brand_wrap .container .left_bnr a h1 {
+    margin:10px 0; font-size:1.2rem; font-weight:700;
+}
+#wrap main #brand_wrap .container .right_wrap {
+    display:flex; align-items:center; position:relative;
+}
+#wrap main #brand_wrap .container .right_wrap .brand_slide {width:95%}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper {}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .swiper-slide {}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .swiper-slide .photo_like {position:relative; margin:0 0 10px;}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .swiper-slide .photo_like a {}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .swiper-slide .photo_like a img {width:100%;}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .swiper-slide .photo_like .like {
+    display:block; width:16px;
+    position:absolute; right:15px; bottom:15px;
+}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .swiper-slide .photo_like .like img {width:100%;}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .swiper-slide > a {}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .swiper-slide > a p {}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .swiper-slide > a .brand {font-size:0.8rem; margin:0 0 5px;}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .swiper-slide > a h1 {font-weight:700; margin:0 0 10px;}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .swiper-slide > a .price {font-size:0.8rem;}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .slide1 {}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .slide2 {}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .slide3 {}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .slide4 {}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .slide5 {}
+#wrap main #brand_wrap .container .right_wrap .brand_slide .swiper-wrapper .slide6 {}
+#wrap main #brand_wrap .container .right_wrap .prev,
+#wrap main #brand_wrap .container .right_wrap .next {transform:scale(0.4);}
+#wrap main #brand_wrap .container .right_wrap .prev {left:-20px;}
+#wrap main #brand_wrap .container .right_wrap .next {right:-20px;}
+#wrap main #brand_wrap .container .right_wrap .prev svg,
+#wrap main #brand_wrap .container .right_wrap .next svg {color:#222;}
