@@ -1,0 +1,8 @@
+/* for.css */
+main {display:flex;}
+main .dan {
+    margin:10px; border:1px dotted #333; padding:20px;
+    width:max-content;
+}
+main .dan h1 {font-weight:600; margin:0 0 20px; text-align:center;}
+main .dan .result {line-height:2; letter-spacing:0.06rem;}
