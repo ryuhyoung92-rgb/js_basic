@@ -1,0 +1,76 @@
+header {
+    height:63px; max-width:1440px; min-width:720px;
+    margin:0 auto; background-color:skyblue;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+header #m_nav_open {}
+/* 전체메뉴 클릭 시 열리는 메뉴 */
+header .m_bg {
+    position:fixed; left:0; top:0; z-index:999;
+    width:100%; height:100vh;
+    background:rgba(0,0,0,0.25);
+    display:none;
+}
+header .m_bg .m_side_wrap {
+    background:#322826;
+    height:100vh; max-width:450px; min-width:320px;
+}
+header .m_bg .m_side_wrap * {color:#fefcf5;}
+header .m_bg .m_side_wrap .top {display:flex; padding:20px 0 0 20px; gap:20px;}
+header .m_bg .m_side_wrap .top .close {}
+header .m_bg .m_side_wrap .top .h1 {}
+header .m_bg .m_side_wrap .top .h1 a {}
+header .m_bg .m_side_wrap .m_nav {}
+header .m_bg .m_side_wrap .m_nav .gnb {
+    margin:30px 0; border-bottom:1px solid #555;
+}
+header .m_bg .m_side_wrap .m_nav .gnb > li {
+    /* display:flex; flex-flow:row nowrap; justify-content:space-between; */
+    padding:15px 20px; position:relative;
+}
+header .m_bg .m_side_wrap .m_nav .gnb > li::after {
+    content:''; display:block; width:12px; height:12px;
+    background:url(https://cdn-icons-png.flaticon.com/128/2985/2985179.png);
+    background-size:12px; filter:invert(1);
+    position:absolute; right:20px; top:20px;
+}
+header .m_bg .m_side_wrap .m_nav .gnb > li > a {font-size:1.3rem;}
+header .m_bg .m_side_wrap .m_nav .gnb > li > .lnb {height:0; overflow:hidden; margin:15px 0 0 15px;} /* 높이가 0이므로 그 영역에서만 안보이게 숨기기(hidden) / hidden을 넣지 않으면 높이가 0이기 때문에 내용의 밖으로 튀어나옴 */
+header .m_bg .m_side_wrap .m_nav .gnb > li > .lnb > li {}
+header .m_bg .m_side_wrap .m_nav .gnb > li > .lnb > li > a {line-height:40px;}
+header .m_bg .m_side_wrap .user_menu {}
+header .m_bg .m_side_wrap .user_menu .login_cart {}
+header .m_bg .m_side_wrap .user_menu .login_cart a {}
+header .m_bg .m_side_wrap .user_menu .login_cart a img {}
+header .m_bg .m_side_wrap .user_menu .login_cart a span {}
+header .m_bg .m_side_wrap .user_menu .bookmark {}
+/* 우측메뉴(desktop~tablet) */
+header .right_menu {display:flex; flex-flow:row nowrap;}
+header .right_menu nav {margin-right:20px;}/* nav+login_cart 사이여백 */
+header .right_menu nav .gnb {display:flex; flex-flow:row nowrap;}
+header .right_menu nav .gnb > li {position:relative; margin-right:30px;}
+header .right_menu nav .gnb > li:last-child {margin-right:0;}
+header .right_menu nav .gnb > li > a {
+    line-height:63px; display:block;
+}
+header .right_menu nav .gnb > li > .lnb {
+    position:absolute; 
+    left:50%; transform:translateX(-50%);
+    background:#322826;
+    width:max-content; text-align:center; 
+    border-radius:7px; padding:30px 20px;
+    display:none;
+}
+header .right_menu nav .gnb > li > .lnb > li {margin-bottom:15px;}
+header .right_menu nav .gnb > li > .lnb > li:last-child {margin-bottom:0;}
+header .right_menu nav .gnb > li > .lnb > li > a {color:#fff;}
+header .right_menu .login_cart {display:flex; gap:8px; align-items:center;}
+header .right_menu .login_cart > * {width:24px;}
+header .right_menu .login_cart > * img {width:100%;}
+header .right_menu .login_cart > * span {display:none;}
+header .right_menu .login_cart .login {}
+header .right_menu .login_cart .login img {}
+header .right_menu .login_cart .login img span {}
+header .right_menu .login_cart .cart {}
+header .right_menu .login_cart .cart img {}
+header .right_menu .login_cart .cart img span {}
